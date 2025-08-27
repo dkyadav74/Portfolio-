@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">MyPortfolio</div>
+      <nav>
+        <button id="menu-toggle">&#9776;</button>
+        <ul id="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <h2>Hello, I’m <span class="highlight">Your Name</span></h2>
+      <p>I create <strong>modern</strong> and <strong>responsive</strong> websites.<br>
+        I’m a front-end developer with experience in <span class="highlight">HTML, CSS, JavaScript</span> and frameworks like <span class="highlight">React</span>. I love turning ideas into <b>interactive</b>, <b>accessible</b>, and <b>user-friendly</b> websites.
+      </p>
+      <a href="#projects" class="btn">View Projects</a>
+      <div class="hero-decor"></div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200?text=Landing+Page" alt="Landing Page Screenshot" />
+          <h3>Landing Page</h3>
+          <p>A modern landing page built with HTML, CSS, and JS featuring smooth transitions and a clean UI.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200?text=Portfolio+Site" alt="Portfolio Screenshot" />
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio website with engaging animations and transitions built for performance and accessibility.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200?text=API+App" alt="App Screenshot" />
+          <h3>API-integrated App</h3>
+          <p>Dynamic web app using JavaScript and external APIs to fetch and display live data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="#" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Back to top">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

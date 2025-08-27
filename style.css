@@ -1,0 +1,307 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Header & Navbar */
+header {
+  background: #222;
+  color: white;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  transition: right 0.3s;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+nav a:hover, nav a:focus {
+  color: #ffde59;
+  outline: none;
+}
+
+/* Hamburger Menu */
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #00adb5 0%, #222 100%);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem 6rem 1rem;
+  border-radius: 0 0 40px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+.hero p {
+  font-size: 1.18rem;
+  margin-bottom: 1.8rem;
+}
+.highlight {
+  color: #ffde59;
+  font-weight: 700;
+}
+.hero-decor {
+  position: absolute;
+  left: -80px;
+  top: 40px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(ellipse at center, #ffffff22 0%, #00adb5 100%);
+  border-radius: 50%;
+  filter: blur(24px);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #00adb5 60%, #008b94 100%);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.4s, box-shadow 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,173,181,0.10);
+}
+.btn:hover, .btn:focus {
+  background: #ffde59;
+  color: #222;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 5px 18px rgba(0,173,181,0.20);
+  outline: none;
+}
+
+/* Sections */
+.section h2 {
+  text-align: center;
+  margin-bottom: 2.3rem;
+  font-size: 2.2rem;
+  color: #00adb5;
+  font-weight: 700;
+}
+
+/* Project Grid */
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.055);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-card img {
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  max-height: 160px;
+}
+.project-card h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.6rem;
+}
+.project-card p {
+  font-size: 1rem;
+  color: #333;
+}
+.project-card:hover {
+  transform: translateY(-7px) scale(1.02);
+  box-shadow: 0 6px 24px rgba(0,173,181,0.13);
+}
+
+/* Contact */
+form {
+  max-width: 540px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+form input, form textarea {
+  padding: 1rem;
+  border-radius: 7px;
+  border: 1px solid #00adb550;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #222;
+  transition: border-color 0.3s;
+}
+form input:focus, form textarea:focus {
+  border-color: #00adb5;
+  outline: none;
+}
+form button {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.3rem 0 1rem 0;
+}
+footer .social-icons {
+  margin-top: 0.7rem;
+}
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.22s;
+  opacity: 0.80;
+}
+footer .social-icons a:hover, footer .social-icons a:focus {
+  transform: translateY(-5px) scale(1.17);
+  opacity: 1;
+  outline: none;
+}
+footer .social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: invert(81%) sepia(36%) saturate(0%) hue-rotate(178deg) brightness(100%) contrast(97%);
+}
+
+/* Back to Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 10000;
+  background: #00adb5;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.8rem;
+  box-shadow: 0 2px 8px rgba(0,173,181,0.2);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#back-to-top:hover {
+  background: #ffde59;
+  color: #222;
+}
+
+/* Transitions and Section Reveal */
+.section {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: all 0.7s cubic-bezier(.19,1,.22,1);
+}
+.section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .hero h2 { font-size: 2.3rem; }
+  .section h2 { font-size: 1.7rem; }
+  .project-card img { max-height: 120px; }
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    right: 6%;
+    top: 60px;
+    width: 170px;
+    padding: 1rem 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    z-index: 10;
+    text-align: left;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+    margin-left: 1rem;
+  }
+  nav {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container { padding: 1rem 0; }
+  .hero { padding: 3rem 0.5rem 5rem 0.5rem; border-radius: 0 0 20px 20px; }
+  form { padding: 1.2rem; border-radius: 8px; }
+  .project-card { padding: 1rem; border-radius: 8px; }
+}
+
